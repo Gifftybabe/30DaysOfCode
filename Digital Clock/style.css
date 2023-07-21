@@ -1,0 +1,225 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  /* body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #10101E;
+  } */
+
+  body{
+    /* background-color: #02070d; */
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .wrap {
+    text-align: center;
+    padding: 200px 0 0 ;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  #greeting {
+    color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 22px;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    /* box-shadow: 0 5px 15px #bebebe;
+    transition-property: background, box-shadow; */
+  }
+
+  #greeting:hover{
+    background: #2E94E3;
+    box-shadow: 0 0 30px #2E94E3;
+  }
+
+  .container{
+    width: 450px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+
+}
+.container *{
+    color: #ffffff;
+    font-family: "Roboto Mono",monospace;
+}
+
+  .wrap {
+    margin-bottom: 20px;
+  }
+
+  /* .datetime{
+    color: #fff;
+    background: #10101E;
+    font-family: "Segoe UI", sans-serif;
+    width: 340px;
+    padding: 15px 10px;
+    border: 3px solid #2E94E3;
+    border-radius: 5px;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    transition: 0.5s;
+    transition-property: background, box-shadow; */
+    /* box-shadow: 0 25px 30px rgba(0,0,0,0.15);
+    backdrop-filter: blur(15px);
+  } */ */
+
+  .datetime:hover{
+    background: #2E94E3;
+    box-shadow: 0 0 30px #2E94E3;
+  }
+
+  .datetime{
+    width: 100%;
+    background-color: rgba(255,255,255,0.06);
+    padding: 50px 25px;
+    border: 1.5px solid rgba(255,255,255,0.06);
+    box-shadow: 0 25px 30px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+}
+
+  .shape1{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    background: linear-gradient(
+        45deg,
+        #ff5b84,
+        #eb3461
+    );
+    border-radius: 50%;
+    z-index: -1;
+    bottom: 100px;
+    right: -150px;
+}
+.shape2{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    background: linear-gradient(
+        135deg,
+        #426cf8,
+        #3ebdf0
+    );
+    border-radius: 50%;
+    top: 150px;
+    left: -150px;
+    z-index: -1;
+}
+
+  .date{
+    /* font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px; */
+
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #c5c5c5;
+    text-align: center;
+
+  }
+
+  .time{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+
+  .time span::after {
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #hour::after {
+    content: " HOURS";
+  }
+
+  #minutes::after {
+    content: " MINS";
+  }
+
+  #seconds::after {
+    content: " SEC";
+  }
+
+  .time span:last-child{
+    background: #3ebdf0;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+  }
+
+  .alarm {
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .alarm input{
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: black;
+    outline: none;
+  }
+
+  .alarm input:focus {
+    border-color: dodgerblue;
+  }
+
+
+  .controls {
+    margin-top: 16px;
+
+}
+
+.button {
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: ffffff;
+    padding: 4px 8px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.set-alarm {
+    background-color: #498AFB;
+}
+
+.clear-alarm {
+    background-color: #FF3860;
+}

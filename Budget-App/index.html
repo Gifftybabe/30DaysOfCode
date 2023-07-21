@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget App</title>
+
+</head>
+<body>
+    <div class="container">
+        <h4 class="title">Track your budget</h4>
+        <div class="section1">
+            <div class="budget-form">
+                <form action="#" id="form1">
+                    <label for="">please enter your budget</label>
+                    <p class="error">value cannot be empty or negtive or zero</p>
+                    <input type="text" id="budget-amount">
+                    <button id="add-budget">add budget</button>
+                </form>
+            </div>
+
+            <div class="feedback">
+                <div class="feedback-item">
+                    <h2 class="feedback-item__title">budget</h2>
+                    <img class="feedback-item__image" src="img/budget.jpg" alt="">
+                    <p class="feedback-item__amount green   ">
+                        $ <span id="feedback-item__budget__show">0</span>
+                    </p>
+                </div>
+
+                <div class="feedback-item">
+                    <h2 class="feedback-item__title">expenses</h2>
+                    <img class="feedback-item__image" src="img/expenses.jpg" alt="">
+                    <p class="feedback-item__amount red">
+                        $ <span id="feedback-item__expenses__show">0</span>
+                    </p>
+                </div>
+
+                <div class="feedback-item">
+                    <h2 class="feedback-item__title">balance</h2>
+                    <img class="feedback-item__image" src="img/balance.jpg" alt="">
+                    <p class="feedback-item__amount black">
+                        $ <span id="feedback-item__balance__show">0</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="expense-form">
+                <form action="#" id="form2">
+                    <label for="">please enter your expense Name</label>
+                    <p class="error"> value cannot be empty and cannot contain numbers </p>
+                    <input type="text" id="expense-name">
+                    <label for="">please enter your expense amount</label>
+                    <p class="error"> value cannot be empty or negtive or zero </p>
+                    <input type="text" id="expense-amount">
+                    <button id="expense-add">add expense</button>
+                </form>
+            </div>
+
+            <div class="expense-feedback">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="expense-title">expense title</th>
+                            <th class="expense-value">expense value</th>
+                            <th class="delete-edit"></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                <template id="expense-row">
+                    <tr>
+                        <td class="expense-title"></td>
+                        <td class="expense-value"></td>
+                        <td class="delete-edit">
+                            <img class="deleteRow" src="img/trash.png" alt="">
+                            <img class="editRow" src="img/edit.png" alt="">
+                        </td>
+                    </tr>
+                </template>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

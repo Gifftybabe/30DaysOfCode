@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    color: white;
+    font-family: 'lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body {
+    background-image: url(img/her.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.center .avatar img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    margin-top: 5%;
+    object-fit: cover;
+    object-position: 0 -8px;
+}
+
+.center {
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 60%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 30px;
+}
+
+h1 {
+    color: wheat;
+}
+
+.content h2, p {
+    font-weight: lighter;
+    letter-spacing: 1px;
+    width: 70%;
+    margin: 10px auto;
+}
+
+.content h2 {
+    font-weight: 400;
+}
+
+.content h3 {
+    margin-top: 40px;
+}
+
+
+.fa-youtube {
+    color: #ff0000;
+  }
+  .fa-linkedin {
+    color: #0077b5;
+  }
+  .fa-facebook {
+    color: #4267b2;
+  }
+  .fa-twitter {
+    color: #00acee;
+  }
+  .counter-container h3 {
+    font-size: 15px;
+    text-align: space-between;
+  }
+
+  .counter-container{
+      display: flex;
+      height: auto;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .counter-container > div{
+      flex: 1;
+      max-width: 100px;
+      text-align: center;
+      padding-bottom: 30px;
+  }
+
+  .counter {font-weight: bold;}

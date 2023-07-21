@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Image Slider</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+<div class="galleryContainer">
+    <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+
+        <div class="imageHolder">
+            <img src="images/slider1.jpg">
+            <p class="captionText">National Stadium</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/slider4.jpg">
+            <p class="captionText">Jabi Mall</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/slider5.jpg">
+            <p class="captionText">Jabi Lake</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/slider6.jpg">
+            <p class="captionText">Omu Resort</p>
+        </div>
+        <div class="imageHolder">
+            <img src="images/slider7.jpg">
+            <p class="captionText">Shopright</p>
+        </div>
+    </div>
+    <div id="dotsContainer"></div>
+</div>
+<script src="Script.js"></script>
+</body>
+</html>

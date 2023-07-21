@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #010615;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #060c21;
+    position: relative;
+    width: 600px;
+    min-height: 550px;
+    margin: 40px;
+}
+
+.container:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.container:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -2;
+    filter: blur(40px);
+    margin: 30px;
+}
+
+.container:before,
+.container::after {
+    background: linear-gradient(235deg, #4FC0D0, #FF90BB, #FFA41B);
+    border-radius: 10px;
+
+}
+
+.container hr {
+    background-color: #FF90BB;
+}
+
+.container h1 {
+    color: #FF90BB;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.container label {
+    font-size: 20px;
+    color: rgb(204, 199, 199);
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.container input {
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container select {
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container button {
+    background-color: #4FC0D0;
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 0;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.container button:hover {
+    background: linear-gradient(235deg, #4FC0D0, #FF90BB, #FFA41B);
+}
+
+.container p {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(7, 194, 7);
+    margin: 25px;
+    text-align: center;
+}
+
+.progress-bar {
+    background-color: #fff;
+    height: 20px;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: rgb(7, 194, 7);
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}

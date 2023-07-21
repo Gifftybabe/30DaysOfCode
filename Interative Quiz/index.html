@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interative Quiz</title>
+    <script src="https://kit.fontawesome.com/cadf8a9c51.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="start_btn"><button>Start Quiz</button></div>
+
+<div class="info_box">
+    <div class="info_title">
+        <span>Rules to Observe</span>
+    </div>
+    <div class="info_list">
+        <div class="info">1. You will have only <span>5 seconds</span> per question.</div>
+        <div class="info">2. Once you select your answer, you can't reselect</div>
+        <div class="info">3. Once the time goes off, you can select any option</div>
+        <div class="info">4. You can'txit from the quiz while you're playing</div>
+        <div class="info">5. You will get points based on selecting the correctaswes</div>
+    </div>
+    <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+    </div>
+</div>
+
+<div class="quiz_box">
+    <header>
+        <div class="title">Interactive Quiz Application</div>
+        <div class="timer">
+            <div class="time_text">Countdown</div>
+            <div class="timer_sec">5</div>
+        </div>
+        <div class="time_line"></div>
+    </header>
+
+    <section>
+        <div class="que_text">
+            <span>What does URL stand for?</span>
+        </div>
+        <div class="option_list">
+            <div class="option">
+                <span>Universal Resource Locator
+                </span>
+                <div class="icon tick"><i class="fas fa-check"></i></div>
+            </div>
+            <div class="option">
+                <span>Uniform Resource Language
+                </span>
+                <div class="icon cross"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="option">
+                <span>Uniform Retrieval Language
+                </span>
+            </div>
+            <div class="option">
+                <span>Universal Reference Link
+                </span>
+            </div>
+        </div>
+    </section>
+<!--
+    <section>
+        <div class="que_text">
+            <span>What does URL stand for?</span>
+        </div>
+        <div class="option_list">
+            <div class="option">
+                <span>Universal Resource Locator
+                </span>
+                <div class="icon tick"><i class="fas fa-check"></i></div>
+            </div>
+            <div class="option">
+                <span>Uniform Resource Language
+                </span>
+                <div class="icon cross"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="option">
+                <span>Uniform Retrieval Language
+                </span>
+            </div>
+            <div class="option">
+                <span>Universal Reference Link
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="que_text">
+            <span>What is the symbol used for representing the hashtag in social media?</span>
+        </div>
+        <div class="option_list">
+            <div class="option">
+                <span>$
+                </span>
+            </div>
+            <div class="option">
+                <span>@
+                </span>
+                <div class="icon cross"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="option">
+                <span>#
+                </span>
+                <div class="icon tick"><i class="fas fa-check"></i></div>
+            </div>
+            <div class="option">
+                <span>!
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="que_text">
+            <span>What is the file extension for a Microsoft Word document?</span>
+        </div>
+        <div class="option_list">
+            <div class="option">
+                <span>.pdf"
+                </span>
+            </div>
+            <div class="option">
+                <span>.txt
+                </span>
+                <div class="icon cross"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="option">
+                <span>.xls
+                </span>
+            </div>
+            <div class="option">
+                <span>.doc
+                </span>
+                <div class="icon tick"><i class="fas fa-check"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="que_text">
+            <span>What is the shortcut to paste content on a Windows computer?</span>
+        </div>
+        <div class="option_list">
+            <div class="option">
+                <span>Ctrl+V
+                </span>
+                <div class="icon tick"><i class="fas fa-check"></i></div>
+            </div>
+            <div class="option">
+                <span>Ctrl+C
+                </span>
+                <div class="icon cross"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="option">
+                <span>Ctrl+Z
+                </span>
+            </div>
+            <div class="option">
+                <span>Ctrl+X
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="que_text">
+            <span>What does RAM stand for?</span>
+        </div>
+        <div class="option_list">
+            <div class="option">
+                <span>Random Available Memory
+                </span>
+            </div>
+            <div class="option">
+                <span>Random Access Memory
+                </span>
+                <div class="icon tick"><i class="fas fa-check"></i></div>
+            </div>
+            <div class="option">
+                <span>Read-Only Memory
+                </span>
+            </div>
+            <div class="option">
+                <span>Ready to Access Memory
+                </span>
+                <div class="icon cross"><i class="fas fa-times"></i></div>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <div class="total_que">
+            <span><p>2</p>of<p>5</p>Questions</span>
+        </div>
+        <button class="next_btn">Proceed</button>
+    </footer>
+</div>
+
+
+<div class="result_box">
+    <div class="icon">
+        <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">You've completed the Quiz!!</div>
+    <div class="score_text">
+        <span>and sorry, you got only <p>2</p> out of <p>5</p></span>
+    </div>
+    <div class="buttons">
+        <button class="restart">Replay</button>
+        <button class="quit">Exit</button>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cludflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script src="js/script.js"></script>
+<script src="js/questions.js"></script>
+
+</body>
+</html>
