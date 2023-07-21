@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip-Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <div class="wrapper">
+                <label for="currency" class="lbl">Currency</label>
+                <select id="currency" class="val">
+                  <option value="NGN">&#x20A6; Nigerian Naira (NGN)</option>
+                  <option value="USD">&#36; US Dollar (USD)</option>
+                  <option value="EUR">&#128; Euro (EUR)</option>
+                </select>
+              </div>
+
+
+              <div class="wrapper">
+                <label for="bill" class="lbl">Bill</label>
+                <div class="input-box">
+                    <input type="number" value="0.00" id="bill" class="val">
+                </div>
+            </div>
+
+
+
+            <div class="wrapper">
+                <span class="lbl">Tip</span>
+                <span id="tip-amount" class="val">&#x20A6;0</span>
+            </div>
+            <hr>
+            <div class="wrapper">
+                <span class="lbl">Total Amount</span>
+                <span id="total-amount" class="val">&#x20A6;0</span>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <label for="tip" class="lbl">Tip %</label>
+                <span id="tip-percent" class="val">0</span>
+            </div>
+            <input type="range" min="1" id="tip" value="15">
+            <div class="wrapper">
+                <label for="no-of-people" class="lbl">No of People</label>
+                <span id="split-num" class="val">0</span>
+            </div>
+
+            <input type="range" min="1" max="15" id="no-of-people" value="1">
+            <div class="input-group">
+                <select class="service" required>
+                 <option disabled selected>How was your service?</option>
+                 <option value="30"> Amazing</option>
+                 <option value="20">Great</option>
+                 <option value="10"> Good</option>
+                 <option value="5">Alright</option>
+                 <option value="0">Terrible</option>
+                </select>
+               </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <span class="lbl">
+                    Tip Per Person
+                </span>
+                <span id="tip-per-person" class="val">&#x20A6;0</span>
+            </div>
+            <div class="wrapper">
+                <span class="lbl">
+                    Total Per Person
+                </span>
+                <span id="total-per-person" class="val">0</span>
+            </div>
+
+        </section>
+
+    <button class="reset-btn" id="resetBtn">Reset</button>
+
+    </div>
+
+
+
+<script src="index.js"></script>
+</body>
+</html>
