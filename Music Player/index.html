@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Music-Player</title>
+</head>
+<body>
+    <div class="main">
+
+        <div class="top_bar">
+            <button onclick="sidebar()"><i class="bx bx-chevron-right"></i></button>
+            <div class="options">
+
+
+    <button id="volume_btn" onclick="toggleMute()"><i class="bx bxs-volume-low"></i></button>
+    <input type="range" min="0" max="1" step="0.01" value="1" id="volume_slider" onchange="changeVolume()">
+    <button><i class="bx bx-music"></i></button>
+                <!-- <button><i class="bx bxs-edit-alt"></i></button> -->
+            </div>
+            <button onclick="open_p()"><i class="bx bx-menu-alt-left"></i></button>
+        </div>
+
+        <div class="playing_part">
+            <div class="img">
+                <img id="songImage" src="images/Sit Garden.png" alt="Picture of a lady playing Music">
+            </div>
+        </div>
+
+        <div class="control_part">
+            <div class="song_title">
+                <p id="songTitle">Song Title</p>
+                <p id="artistName">Artist Name</p>
+            </div>
+
+            <div class="control_buttons">
+                <div class="range_slider">
+                    <input type="range" min="0" max="100" id="slider" value="0">
+                    <p id="currentTime">0:00</p>
+                </div>
+
+                <div class="main_btns">
+                    <button id="previous" onclick="previousSong()"><i class="bx bx-skip-previous"></i></button>
+                    <button id="play_btn" onclick="togglePlay()"><i class="bx bx-play"></i></button>
+                    <button id="next" onclick="nextSong()"><i class="bx bx-skip-next"></i></button>
+                </div>
+        </div>
+        </div>
+
+        <div class="playlist">
+            <div class="p_song">
+                <p class="p_title">Glossy Mambo</p>
+                <p class="p_artist">Paul Winslow</p>
+                <button onclick="playSong(0)"><i class="bx bx-play"></i></button>
+            </div>
+
+            <div class="p_song active_song">
+                <p class="p_title">Idyllic Beats</p>
+                <p class="p_artist">Rémo</p>
+                <button onclick="playSong(1)"><i class="bx bx-play"></i></button>
+            </div>
+
+            <div class="p_song">
+                <p class="p_title">Cloud Nine</p>
+                <p class="p_artist">Basil & Lemon</p>
+                <button onclick="playSong(2)"><i class="bx bx-play"></i></button>
+            </div>
+
+
+            <div class="p_song">
+                <p class="p_title">Melody Remedy</p>
+                <p class="p_artist">Didier, Thomas</p>
+                <button onclick="playSong(3)"><i class="bx bx-play"></i></button>
+            </div>
+
+
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
